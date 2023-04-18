@@ -16,7 +16,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header-logo">
-        <img src="../../assents/logo/DISTRIBUCIONES_AGRICOLAS" alt="logo" />
+        <img className="logo" src="/assents/logo/DISTRIBUCIONES_AGRICOLAS.png" alt="logo" />
       </div>
       <div className="button-menu">
         <button onClick={isOpen} className="button-nav">

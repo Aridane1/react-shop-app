@@ -1,0 +1,9 @@
+.products{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.title-products {
+    display: flex;
+    justify-content: center;
+}

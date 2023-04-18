@@ -1,0 +1,100 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #a7d7c5;
+}
+
+.header-nav {
+  display: flex;
+  text-decoration: none;
+
+  margin: 0.5%;
+  list-style: none;
+}
+
+.header-a {
+  text-decoration: none;
+  color: black;
+  margin-left: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-logo {
+  display: flex;
+}
+
+.button-menu {
+  display: none;
+}
+.faBars {
+  cursor: pointer;
+}
+.faXmark {
+  display: none;
+  cursor: pointer;
+}
+
+@media (min-width: 300px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 3vw;
+  }
+  .header-nav.isActive {
+    display: flex;
+  }
+  .header-li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .button-nav {
+    transform: scale(1.5);
+    border: 0;
+    margin: 0 10px 10px;
+    background-color: transparent;
+  }
+  .faBars.isClicked {
+    display: none;
+  }
+  .faXmark.isClicked {
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-li {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .button-menu {
+    display: none;
+  }
+}
